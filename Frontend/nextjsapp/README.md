@@ -41,6 +41,6 @@ This application highlights the core features of **Next.js**, including **client
 2. Install dependencies
    - npm install
 3. Start servers
-   -**npx json-server --watch db.json --port 3001** (this starts the JSON server at port 3001)
-   -**npm run dev** (this starts the frontend where it consumes the backend)
+   - **npx json-server --watch db.json --port 3001** (this starts the JSON server at port 3001)
+   - **npm run dev** (this starts the frontend where it consumes the backend)
 

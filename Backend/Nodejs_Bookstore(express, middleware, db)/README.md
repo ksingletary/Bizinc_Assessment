@@ -29,7 +29,6 @@ This project is a **Node.js bookstore API** built with **Express.js** for managi
 - **Node.js**: Runtime environment for executing JavaScript on the server.
 - **Express.js**: Framework for building the RESTful API.
 - **PostgreSQL**: Relational database for storing book data.
-- **Joi**: Schema validation for API request payloads.
 - **Custom Middleware**: For request logging and debugging.
 - **JSON Schema**: Used to validate API input data.
 - **pg**: PostgreSQL client for Node.js.
@@ -38,7 +37,7 @@ This project is a **Node.js bookstore API** built with **Express.js** for managi
 
 ### Installation
 
-- If you want to send test it out and send curl requests, make sure you have postgres installed
+- If you want to test it out and send curl requests, make sure you have postgres installed.
 
 1. Clone the Bizinc repository:
    - git clone repository_name
@@ -48,7 +47,7 @@ This project is a **Node.js bookstore API** built with **Express.js** for managi
 3. Create the database and populate with these commands:
    - psql (to enter postgres CLI)
    - CREATE DATABASE books;
-   - psql -u books -d books < data.sql (back inside terminal)
+   - psql -U postgres -d books < data.sql (enter this back inside terminal)
 4. Run the app:
    - npm start
 5. Test with a curl request(copy and paste into terminal):
