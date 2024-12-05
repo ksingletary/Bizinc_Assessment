@@ -1,0 +1,39 @@
+{
+    "weather": [
+      {
+        "id": 1,
+        "location": "Maryland",
+        "temp_f": 42,
+        "condition": "Cloudy",
+        "icon": "/cloudy.png"
+      },
+      {
+        "id": 2,
+        "location": "Atlanta",
+        "temp_f": 50,
+        "condition": "Clear",
+        "icon": "/clear.png"
+      },
+      {
+        "id": 3,
+        "location": "Philadelphia",
+        "temp_f": 40,
+        "condition": "Cloudy",
+        "icon": "/cloudy.png"
+      },
+      {
+        "id": 4,
+        "location": "Dallas",
+        "temp_f": 55,
+        "condition": "Rain",
+        "icon": "/rain.png"
+      },
+      {
+        "id": 5,
+        "location": "San Francisco",
+        "temp_f": 62,
+        "condition": "Sunny",
+        "icon": "/sunny.png"
+      }
+    ]
+  }

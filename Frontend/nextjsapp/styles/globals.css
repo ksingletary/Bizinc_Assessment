@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "ApercuRegular";
+  src: url('../public/fonts/apercu-regular.ttf') format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "ApercuMedium";
+  src: url('../public/fonts/apercu-medium.ttf') format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url('../public/fonts/apercu-bold.ttf') format('truetype');
+  font-weight: bold;  /* Specify the font-weight this font face represents*/
+}
+
+
+@font-face {
+  font-family: "CaeciliaLight";
+  src: url('../public/fonts/CaeciliaComLight.ttf') format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "CaeciliaMedium";
+  src: url('../public/fonts/CaeciliaComSemi.ttf') format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CaeciliaBold";
+  src: url('../public/fonts/CaeciliaComBold.ttf') format("truetype");
+  font-weight: bold;
+}
+
+@layer components {
+  .primary-btn {
+    @apply h-14 w-64 mx-auto lg:ml-0 px-6 py-3 cursor-pointer 
+    font-apercuMedium bg-blackLight border-2 border-orange-600 hover:bg-black transform 
+    ease-in-out duration-300 text-center text-white rounded-lg;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes slideInExpand {
+    0% {
+      transform: translateX(-100%) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes slideOutShrink {
+    0% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%) scale(0.8);
+      opacity: 0;
+    }
+  }
+  
+  .navbar-open {
+    animation: slideInExpand 0.2s forwards;
+  }
+  
+  .navbar-close {
+    animation: slideOutShrink 0.2s forwards;
+  }
+
